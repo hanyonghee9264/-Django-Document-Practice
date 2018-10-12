@@ -6,6 +6,10 @@
 #  부모 테이블만 존재
 from django.db import models
 
+__all__ = (
+    'CommonInfo',
+    'Student',
+)
 
 class CommonInfo(models.Model):
     name = models.CharField(max_length=100, db_index=True)
